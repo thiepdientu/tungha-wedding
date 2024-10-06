@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://thiepdientu.com.vn/mau-thiep/1138/">
 <meta property="og:site_name" content="Sơn Linh - Thiệp cưới">
 <meta property="og:updated_time" content="2024-04-03T04:59:39+00:00">
-<meta property="og:image" content="https://i.postimg.cc/0y111kPK/20-BA7-A2-D-4-A53-4-CB6-9-AF3-B1-E602-E13-D5-C.jpg">
+<meta property="og:image" content="https://i.ibb.co/WDMwmjp/257A3389.jpg">
 <meta property="og:image:secure_url" content="https://i.postimg.cc/0y111kPK/20-BA7-A2-D-4-A53-4-CB6-9-AF3-B1-E602-E13-D5-C.jpg">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="1351">
@@ -552,21 +552,21 @@ Ngọc Linh    </div>
         <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
 			
           <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
-          <form action="" id="messageForm" method="POST">
+          <div>
 		
           <input type="hidden" id="postId" value="1138">
             <div class="input-group uk-margin-top" style="color:white">
               <label for="">
                 Tên của bạn              </label>
-              <input style="border:1px solid white" id="m_name" type="text" class="input blur-bg" value="" required="">
+              <input id="myspan1" style="border:1px solid white" id="m_name" type="text" class="input blur-bg" value="" required="">
             </div>
             <div class="input-group uk-margin-top">
               <label for="" style="color:white">
                 Lời nhắn gửi              </label>
-              <textarea style="border:1px solid white; color:white" id="m_text" class="input-text text-white blur-bg" name="" cols="30" rows="5" required=""></textarea>
+              <textarea  id="myspan2" style="border:1px solid white; color:white" id="m_text" class="input-text text-white blur-bg" name="" cols="30" rows="5" required=""></textarea>
             </div>
-            <button id="myButton" class="btn btn-primary send_message uk-margin-top" style="color:white">Gửi lời chúc</button>
-          </form>
+            <button id="myButton" class="btn btn-primary uk-margin-top" style="color:white">Gửi lời chúc</button>
+          </div>
         </div>
       </div>
     </section>
@@ -575,6 +575,8 @@ Ngọc Linh    </div>
   
   const button = document.getElementById('myButton');
   button.addEventListener('click', function() {
+    document.getElementById('myspan1').value = '';
+    document.getElementById('myspan2').value = '';
     alert('Cảm ơn mọi người đã gửi lời chúc đến vợ chồng em ạ <3');
   });
 
